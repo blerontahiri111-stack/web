@@ -1,41 +1,54 @@
 <html>
   <body>
     <form>
-      <label for="firstname">Firstname:</label><br>
-      <input type="text" id="firstname" name="firstname"><br><br>
+      <fieldset>
+        <legend>Personal information</legend>
 
-      <label for="lastname">Lastname:</label><br>
-      <input type="text" id="lastname" name="lastname"><br><br>
+        <label for="firstname">Firstname:</label><br>
+        <input type="text" id="firstname" name="firstname" value="Bleron" readonly required><br><br>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
+        <label for="lastname">Lastname:</label><br>
+        <input type="text" id="lastname" name="lastname" size="35" required><br><br>
 
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-      
-      <label>Gender:</label><br>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="password" required><br><br>
 
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
 
-      
-      <label>Gaming preference:</label><br>
-      <input type="radio" id="esports" name="gaming" value="esports">
-      <label for="esports">E-sports</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
 
-      <input type="radio" id="casual" name="gaming" value="casual">
-      <label for="casual">Casual</label><br>
+        <label>Gaming preference:</label><br>
+        <input type="radio" id="esports" name="gaming" value="esports" required>
+        <label for="esports">E-sports</label><br>
 
-      <input type="radio" id="rpg" name="gaming" value="rpg">
-      <label for="rpg">RPG</label><br>
+        <input type="radio" id="casual" name="gaming" value="casual">
+        <label for="casual">Casual</label><br>
 
-      <input type="radio" id="fps" name="gaming" value="fps">
-      <label for="fps">FPS</label><br><br>
+        <input type="radio" id="rpg" name="gaming" value="rpg">
+        <label for="rpg">RPG</label><br>
 
-      <input type="submit" value="Submit">
+        <input type="radio" id="fps" name="gaming" value="fps">
+        <label for="fps">FPS</label><br><br>
+
+        <label for="pet">Choose a pet:</label><br>
+        <select id="pet" name="pet" required>
+          <option value="">-- Select a pet --</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="fish">Fish</option>
+        </select><br><br>
+
+        <label for="message">Your message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="20" maxlength="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+      </fieldset>
     </form>
   </body>
 </html>
